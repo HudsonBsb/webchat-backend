@@ -1,0 +1,15 @@
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\controller\ws\AbstractMessageControllerWs.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\controller\ws\MessageControllerWs.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\entity\MessageEntity.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\constant\PathsConstants.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\config\WebSocketConfig.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\service\FilesStorageService.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\service\UserService.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\model\User.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\controller\api\UserControllerApi.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\model\Message.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\model\UserPrivate.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\util\Utils.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\repository\UserRepository.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\WebsocketApplication.java
+C:\Users\hudson.gomes\original\estudo\webchat-backend\src\main\java\br\com\ws\websocket\entity\UserEntity.java
