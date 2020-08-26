@@ -1,6 +1,5 @@
 package br.com.ws.websocket.service;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
@@ -14,11 +13,11 @@ import java.util.Objects;
 @Service
 public class FilesStorageService {
 
-    private static  final String directory = System.getProperty("user.dir");
+    private static final String DIRECTORY = System.getProperty("user.dir");
 
     public void save(MultipartFile file, String path) {
         try {
-            Path pathImages = Paths.get(this.directory, path);
+            Path pathImages = Paths.get(DIRECTORY, "/websocket/images/", path);
             Path pathFile = pathImages.resolve(Objects.requireNonNull(file.getOriginalFilename()));
             Files.createDirectories(pathImages);
             file.transferTo(pathFile.toFile());
@@ -30,7 +29,7 @@ public class FilesStorageService {
     public Resource get(Path path) {
         try {
 
-            Path filePath = Paths.get(this.directory, path.toString());
+            Path filePath = Paths.get(this.DIRECTORY, path.toString());
             Resource resource = new UrlResource(filePath.toUri());
 
             if (resource.exists()) {
