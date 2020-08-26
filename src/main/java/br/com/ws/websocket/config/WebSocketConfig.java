@@ -22,7 +22,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry
                 .addEndpoint(WS)
-                .setAllowedOrigins("http://webchat-setapp.s3-sa-east-1.amazonaws.com")
+                .setAllowedOrigins("http://setapp-chat.s3-sa-east-1.amazonaws.com")
                 .withSockJS();
     }
 }
