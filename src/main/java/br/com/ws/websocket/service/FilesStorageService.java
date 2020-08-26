@@ -14,10 +14,11 @@ import java.util.Objects;
 public class FilesStorageService {
 
     private static final String DIRECTORY = System.getProperty("user.dir");
+    private static final String IMAGES_DIR = "/websocket/images/";
 
     public void save(MultipartFile file, String path) {
         try {
-            Path pathImages = Paths.get(DIRECTORY, "/websocket/images/", path);
+            Path pathImages = Paths.get(DIRECTORY, IMAGES_DIR, path);
             Path pathFile = pathImages.resolve(Objects.requireNonNull(file.getOriginalFilename()));
             Files.createDirectories(pathImages);
             file.transferTo(pathFile.toFile());
@@ -29,7 +30,7 @@ public class FilesStorageService {
     public Resource get(Path path) {
         try {
 
-            Path filePath = Paths.get(this.DIRECTORY, path.toString());
+            Path filePath = Paths.get(DIRECTORY, IMAGES_DIR, path.toString());
             Resource resource = new UrlResource(filePath.toUri());
 
             if (resource.exists()) {
