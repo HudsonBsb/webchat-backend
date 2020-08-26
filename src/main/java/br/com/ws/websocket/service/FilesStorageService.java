@@ -14,8 +14,7 @@ import java.util.Objects;
 @Service
 public class FilesStorageService {
 
-    @Value("${path.app.directory.images}")
-    private String directory;
+    private static  final String directory = System.getProperty("user.dir");
 
     public void save(MultipartFile file, String path) {
         try {
